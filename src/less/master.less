@@ -1,0 +1,75 @@
+/*
+ * Main stylesheet
+ *
+ * This is where we make sure all stylesheets are combined properly and imported
+ * Please refrain from writing any actual code in this file
+ */
+
+/*!
+
+PROJECT
+
+Proud authors:      gentlemangiraffe.dk
+People behind:      Lars Hesselberg, @hesselberg
+
+!*/
+
+
+/**
+ * Class notation:  BEM - https://css-tricks.com/bem-101/
+ *
+ * Quick example of BEM class notation:
+ *
+ * BLOCK:           breadcrumb
+ * ELEMENT:         breadcrumb__link
+ * MODIFIER:        breadcrumb__link—-active
+ *
+ *
+ * So, for the markup it would look something like:
+ *
+ * <div class="breadcrumb">                                                      <---- BLOCK
+ *     <a class="breadcrumb__link" href="#">Home</a>                             <---- ELEMENT below the BLOCK
+ *     <span class="breadcrumb__link breadcrumb__link--active">Page</span>       <---- Also an ELEMENT, but to make it look active, we add the MODIFIER 'active'
+ * </div>
+ */
+
+/* Google Web Font
+********************/
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700);
+
+
+/* Settings
+********************/
+@import "settings/settings.variables.less";
+
+
+/* Mixins
+********************/
+@import "mixins/mixin.vendor-prefixes.less";
+@import "mixins/mixin.grid.less";
+@import "mixins/mixin.grid-framework.less";
+@import "mixins/mixin.gradients.less";
+@import "mixins/mixin.clearfix.less";
+@import "mixins/mixin.buttons.less";
+
+
+/* Base
+********************/
+@import "base/base.less";
+@import "base/base.normalize.less";
+@import "base/base.browserfixes.less";
+@import "base/base.typography.less";
+@import "base/base.utilities.less";
+@import "base/base.grid.less";
+@import "base/base.buttons.less";
+@import "base/base.forms.less";
+@import "base/base.tables.less";
+
+
+/* Components
+********************/
+
+
+
+/* View
+********************/
